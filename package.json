@@ -1,0 +1,22 @@
+{
+  "name": "majavat-js",
+  "version": "0.1.0",
+  "description": "a lightweight boilerplate project generator for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Majavat/Majavat-js.git"
+  },
+  "keywords": [
+    "project-generator"
+  ],
+  "author": "Majavat < majavat.cli@gmail.com >",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Majavat/Majavat-js/issues"
+  },
+  "homepage": "https://github.com/Majavat/Majavat-js#readme"
+}
