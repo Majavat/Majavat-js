@@ -4,7 +4,7 @@
   "description": "a lightweight boilerplate project generator for javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Majavat/Majavat-js/issues"
   },
-  "homepage": "https://github.com/Majavat/Majavat-js#readme"
+  "homepage": "https://github.com/Majavat/Majavat-js#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
