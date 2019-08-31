@@ -1,5 +1,3 @@
-const indexJS = () => `
-const app = document.querySelector("#app");
-`;
+const indexJS = () => `const app = document.querySelector("#app");`;
 
 module.exports = indexJS;

@@ -1,5 +1,4 @@
-const indexHTML = (title, js, css) => `
-<!DOCTYPE html>
+const indexHTML = (title, js, css) => `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
