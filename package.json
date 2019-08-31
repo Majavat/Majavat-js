@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
+    "coverage": "jest --coverage",
     "start": "node index.js"
   },
   "repository": {
