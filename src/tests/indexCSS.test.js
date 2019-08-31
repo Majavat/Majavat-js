@@ -1,10 +1,9 @@
 const indexCSS = require('../templates/indexCSS');
 
-const mockedTemplate = `
-    body {
-        padding: 0;
-        margin: 0;
-    }
+const mockedTemplate = `body {
+    padding: 0;
+    margin: 0;
+}
 `;
 
 describe('indexCSS template', () => {

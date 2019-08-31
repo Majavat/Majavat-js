@@ -1,7 +1,6 @@
 const indexHTML = require('../templates/indexHTML');
 
-const mockedTemplate = `
-<!DOCTYPE html>
+const mockedTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
