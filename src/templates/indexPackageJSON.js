@@ -12,14 +12,23 @@ const indexPackageJSON = (project) => `{
         "url": "${project.git.length > 0 ? project.git : ""}"
     },
     "keywords": [
-        ${project.keywords.length > 0 ? project.keywords :  ""}
+        ${project.keywords.length > 0 ? project.keywords.map( (keyword, i) => {
+            
+            if ( i === 0 ||  i === project.keywords.length ) {
+                return `"${keyword}"`;
+            } 
+
+            return ` "${keyword}"`;
+            
+            
+        }) :  ""}
     ],
     "author": "${project.author.length > 0 ? project.author : ""}",
     "license": "${project.license.length > 0 ? project.license : "MIT"}",
     "bugs": {
-        "url": "${project.url.length > 0 ? project.url`/issues` : ""}" 
+        "url": "${project.url.length > 0 ? project.url+"/issues" : ""}" 
     },
-    "homepage": "${project.url.length > 0 ? project.url`#readme` : ""}"
+    "homepage": "${project.url.length > 0 ? project.url+"#readme" : ""}"
 }
 `;
 
