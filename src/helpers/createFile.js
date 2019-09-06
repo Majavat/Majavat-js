@@ -11,6 +11,7 @@ const createFile = (dir, file, template) => {
     // stop creating the file if the input is undefined
     if ( typeof dir === "undefined" || typeof file === "undefined" || typeof template === "undefined" ) {
         console.log('\ninvalid file name');
+        return 'invalid file name';
     } else {
 
         // check if directory exists before attempting to create it
@@ -19,9 +20,11 @@ const createFile = (dir, file, template) => {
             // concatenate directory and file path then create the file based on input
             fs.writeFileSync(path.join(dir, file), template, 'utf-8');
             console.log('done!');
+            return 'file created!';
         } else {
             console.log('\nfile exists!');
             cli.close();
+            return 'file exists!';
         }
 
     }
