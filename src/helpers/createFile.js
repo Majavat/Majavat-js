@@ -9,7 +9,7 @@ const cli = require('./cli');
 const createFile = (dir, file, template) => {
 
     // stop creating the file if the input is undefined
-    if ( typeof file === "undefined" || typeof template === "undefined" ) {
+    if ( typeof dir === "undefined" || typeof file === "undefined" || typeof template === "undefined" ) {
         console.log('\ninvalid file name');
     } else {
 
